@@ -31,3 +31,21 @@ libraries such as os, osgeo, gdal among some oth-ers..
 Keywords: Article template. Author’s instructions.
 
 # Introducción
+Dentro de este proyecto se presenta el cálculo
+automatizado del índice de índice de vegetación
+(NDVI) mediante un programa realizado en el
+lenguaje de programación Python en su versión
+3.7. Según la página web GIDAHATARI, “Los
+índices de vegetación se calculan a partir de las
+radiancias de las plantas en ciertos rangos del
+espectro visible e invisible. Curiosamente la
+vegetación tiene una mayor radiancia en el rojo
+y el infrarrojo que en el azul.” (gidahatari.com,
+2017).
+También el sitio web nos menciona que “existen
+varios índices de vegetación en base de diferen-tes fórmulas de combinación de bandas, dentro
+de estos índices el más conocido es el NDVI, ya
+que fue uno de los primeros en formularse y
+porque puede ser aplicado a una serie de satéli-tes nuevos y antiguos” (gidahatari.com,
+2017).
+
