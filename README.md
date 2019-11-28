@@ -163,7 +163,7 @@ Dentro de QGIS se utilizaron las herramientas de Python para la realización del
 
 # Conclusiones
 
-###Brayan Aguilar: 
+### Brayan Aguilar: 
 Es notorio el funcionamiento del programa expuesto, por el momento solo se han hecho pruebas en el sistema operativo de Windows, específicamente en la versión 10. Al ver los resultados del programa se puede dar por hecho que nuestros objetivos fueron cumplidos, se manifiesta la conformi-dad del poder brindar apoyo con el programa mencionado a ingenieros y cartógrafos que lo necesiten y no solo eso, puede ser útil para todas las personas que lo requieran.
 ### Sarahí Ramírez: 
 Cabe señalar que fue un ver-dadero reto el desarrollo del proyecto, ya que en innumerables ocasiones tuvieron que ha-cerse correcciones al código para que pudie-se correr con normalidad y funcional. Se re-calca que está satisfecho con los resultados que ha arrojado el programa.
