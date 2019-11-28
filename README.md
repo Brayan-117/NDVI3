@@ -58,15 +58,23 @@ estimar la cantidad, calidad y desarrollo de la
 vegetación con base a la medición de la inten-sidad de la radiación de ciertas bandas del es-pectro electromagnético que la vegetación emi-te o refleja
 
 # Desarrollo
+
 ## Librerias
+
 ### GDAL
 Los modulos que tiene gdal nos sirve para abrir la imagen y ver los modulos, además nos ayu-da a leer los datos de las bandas y después de ello convierte los datos a puntos flotantes, lo cual nos ayudará a facilitar el cálculo de Índice de Vegetación
 GDAL significa Geospatial Data Abstraction Library.
+
 Es una biblioteca de software para la lectura y escritura de formatos de datos geoespaciales publicada bajo la MIT License por la Fundación OSGeo. Con esta librería se pueden realizar multitud de operaciones de transformación y procesamiento sobre gran variedad de datos ráster y vectoriales. La librería GDAL es utilizada por gran número de paquetes geomáticos como por ejemplo QGIS, gvSIG o ESRI ArcGIS. Des-de los menús de cualquiera de estos clientes SIG podemos acceder a las funciones de GDAL utilizando los formularios diseñados para ello.
+
 GDAL tiene como función leer y escribir datos provenientes de ráster geoespaciales además realiza otras funciones como exportar imáge-nes, transformar formatos, reproyectar datos, hacer mosaicos de datos entre otras cosas.
 Una de las funciones que tiene gdal es instalar el controlador de errores que captura el error, la clase el mensaje GDAL.
+
 Encontrará los datos de la demo en /usr/local/share/data. Queremos echar un vista-zo a Natural Earth data en este inicio rápido. Queremos trabajar con una copia de los datos. Así que el primer paso es copiar los datos en su directorio home.
+
+
 Figura 1. Datos en directorio Home
+
 Entonces encontrará un archivo ráster de Natu-ralEarth y un .tfw World-file at:
  
 Figura 2. Archivo Raster
@@ -111,7 +119,26 @@ Esto nos arrojará el resultado de las capas, las que no están aparecerán como
 Figura 8. Código de creación del mapa
 Con ello ya se finaliza el proceso y se agregará automáticamente en nuestro mapa
 
-# Manejo de desarrollo
+# Manejo de datos
 
 ![Palabras Del Texto Alternativo]
+
+1.	Datos en el programa.
+Para este programa se utilizaron las bandas Senitel-2 de 10 metros, las cuales son el rojo, azul, verde e infrarrojo. Estas bandas se utiliza-ron para realizar el cálculo de NDVI.
+ 
+Figura 9. Bandas satélite Senitel-2
+
+2.	Sistema Operativo.
+En el sistema operativo en el que ha funcionado el programa es Windows, pero se tiene contem-plado que funcione para los demás sistemas operativos.
+3.	Programas y/o herramientas.
+Dentro de QGIS se utilizaron las herramientas de Python para la realización del programa.
+
+# Conclusiones
+
+###Brayan Aguilar: 
+Es notorio el funcionamiento del programa expuesto, por el momento solo se han hecho pruebas en el sistema operativo de Windows, específicamente en la versión 10. Al ver los resultados del programa se puede dar por hecho que nuestros objetivos fueron cumplidos, se manifiesta la conformi-dad del poder brindar apoyo con el programa mencionado a ingenieros y cartógrafos que lo necesiten y no solo eso, puede ser útil para todas las personas que lo requieran.
+### Sarahí Ramírez: 
+Cabe señalar que fue un ver-dadero reto el desarrollo del proyecto, ya que en innumerables ocasiones tuvieron que ha-cerse correcciones al código para que pudie-se correr con normalidad y funcional. Se re-calca que está satisfecho con los resultados que ha arrojado el programa.
+### Gilberto Hdez: 
+Como se puede apreciar en el desarrollo del proyecto nuestro programa es funcional, así que podemos dar por hecho que es totalmente optimo e incluso podría decir que compatible con cualquier sistema operativo (Windows, ¡Os, Unix, etc.), además de que el código es fácil de entender y opti-mo, se podría decir que lo más complejo de la ejecución del programa fue conseguir las imágenes satelitales con las que estuvimos haciendo las pruebas de este, además de unas pequeñas correcciones que le tuvimos que hacer a nuestro código para lograr que este cumpliera con nuestros objetivos.
 
