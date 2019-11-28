@@ -72,7 +72,7 @@ Una de las funciones que tiene gdal es instalar el controlador de errores que ca
 
 Encontrará los datos de la demo en /usr/local/share/data. Queremos echar un vista-zo a Natural Earth data en este inicio rápido. Queremos trabajar con una copia de los datos. Así que el primer paso es copiar los datos en su directorio home.
 
-
+![Palabras Del Texto Alternativo](https://github.com/Brayan-117/NDVI3/blob/master/imagenes/f1.jpg)
 Figura 1. Datos en directorio Home
 
 Entonces encontrará un archivo ráster de Natu-ralEarth y un .tfw World-file at:
