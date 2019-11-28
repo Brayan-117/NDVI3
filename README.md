@@ -57,5 +57,5 @@ objetivo del cálculo del índice de vegetación es
 estimar la cantidad, calidad y desarrollo de la
 vegetación con base a la medición de la inten-sidad de la radiación de ciertas bandas del es-pectro electromagnético que la vegetación emi-te o refleja
 
-#DESARROLLO
-##Librerias
+# DESARROLLO
+## Librerias
