@@ -60,3 +60,58 @@ vegetación con base a la medición de la inten-sidad de la radiación de cierta
 # Desarrollo
 ## Librerias
 ### GDAL
+Los modulos que tiene gdal nos sirve para abrir la imagen y ver los modulos, además nos ayu-da a leer los datos de las bandas y después de ello convierte los datos a puntos flotantes, lo cual nos ayudará a facilitar el cálculo de Índice de Vegetación
+GDAL significa Geospatial Data Abstraction Library.
+Es una biblioteca de software para la lectura y escritura de formatos de datos geoespaciales publicada bajo la MIT License por la Fundación OSGeo. Con esta librería se pueden realizar multitud de operaciones de transformación y procesamiento sobre gran variedad de datos ráster y vectoriales. La librería GDAL es utilizada por gran número de paquetes geomáticos como por ejemplo QGIS, gvSIG o ESRI ArcGIS. Des-de los menús de cualquiera de estos clientes SIG podemos acceder a las funciones de GDAL utilizando los formularios diseñados para ello.
+GDAL tiene como función leer y escribir datos provenientes de ráster geoespaciales además realiza otras funciones como exportar imáge-nes, transformar formatos, reproyectar datos, hacer mosaicos de datos entre otras cosas.
+Una de las funciones que tiene gdal es instalar el controlador de errores que captura el error, la clase el mensaje GDAL.
+Encontrará los datos de la demo en /usr/local/share/data. Queremos echar un vista-zo a Natural Earth data en este inicio rápido. Queremos trabajar con una copia de los datos. Así que el primer paso es copiar los datos en su directorio home.
+Figura 1. Datos en directorio Home
+Entonces encontrará un archivo ráster de Natu-ralEarth y un .tfw World-file at:
+ 
+Figura 2. Archivo Raster
+Figura 3. Dato Interesante
+Generalmente los usuarios de esta librería son cartógrafos en ingenieros que estén involucra-dos en el manejo de datos geoespaciales, claro que también puedem manejarlo estudiantes que los necesiten.
+
+### Processing
+
+En nuestro programa utilizamos processing para calcular el NDVI
+Processing es una biblioteca gráfica de código abierto y un entorno de desarrollo integrado (IDE) creado para las comunidades de artes electrónicas, nuevos medios y diseño visual con el propósito de enseñar a los no programa-dores los fundamentos de la programación de computadoras en un contexto visual.
+La interfaz de Processing es muy sencilla debi-do a que ésta funciona principalmente como un editor de texto, que nos servira para compilar el código de los programas que escribamos. es desarrollado por artistas y diseñadores como una herramienta alternativa al software propieta-rio.
+El primer paso consiste en descargar las libre-rías de Processing.js, para lo cual basta con acceder a la página de descargas del frame-work: http://processingjs.org/download
+Podemos obtener un zip con varios archivos, incluido el propio framework, otro zip con varios ejemplos o el archivo .js suelto en dos formas, normal y minimizado. En el momento de escribir este artículo están en la versión 1.1.0, con lo que el archivo para poner en marcha Proces-sing.js se llama "processing-1.1.0.js" y el mini-mizado se llama "processing-1.1.0.min.js". Cualquiera de esas dos opciones servirá para comenzar, aunque en etapa de desarrollo intere-sa utilizar el archivo completo y en etapa de producción el minimizado.
+Opción
+1) Usar el lenguaje Processing
+La primera posibilidad que nos proponen es trabajar con el lenguaje Processing, que opina-mos estaría bien para aquellas personas que tengan experiencia previa en ese lenguaje de programación.
+Esta manera de trabajar con Processing.js la explicamos en el artículo usar Processing.js mediante el lenguaje Processing.
+Opción 
+2) Usar código nativo Javascript
+La segunda posibilidad es escribir directamente código Javascript nativo, haciendo uso del objeto Processing, que implementa el frame-work. Esta segunda opción será propia para las personas que ya tenga experiencia en Ja-vascript y no vean la necesidad o no deseen aprender un nuevo lenguaje.
+Esta otra manera de trabajar con Processing la explicaremos en el artículo usando Proces-sing.js mediante Javascript.
+Sirve como medio para la enseñanza y produc-ción de proyectos multimedia e interactivos de diseño digital. Por lo tanto, los usuarios pueaquellos que proyectos digitales y presen-taciones multimedia.
+
+## Metodología
+
+La estructura de nuestro proyecto es un tanto técnica, por lo cual ilustraremos cada uno de los pasos (procesos que realizamos) con su respectiva descripción y funcionamiento, eso hará que se pueda replicar nuestro programa para beneficio escolar, laboral o social.
+1.	Primeramente, necesitamos importar los módulos y las librerías necesarias:    
+ 
+Figura 4. Importación de módulos y librerías
+2.	A continuación, con la extensión os.chdir, le diremos que abra el directorio donde tendremos almacenadas nuestras imágenes, y con el os.listdir y os.getcwd  vamos a imprimir las listas de las bandas.  
+ 
+Figura 5. Listado de datos
+3.	Ahora cargaremos las bandas, comenzaremos por la ROJA y la NIR (infrarojo), que hacemos con esto, leer el directorio donde tenemos las capas (bandas) y añadirlas con el comando iface.addRasterLayer.
+ 
+Figura 6. Cargado de Capas
+4.	Por consiguiente, importamos el complemento de procesos que es prosessing, con ello tomará las variables NIR y RED para la calculadora de RASTERS.
+Posteriormente agregamos la formula del calculo del NVDI con su respectiva variable:(NIR-RED) / (NIR+RED).
+ 
+Figura 7. Uso de Prosessing
+Esto nos arrojará el resultado de las capas, las que no están aparecerán como <none>. Luego para agregar el cálculo del NVDI al mapa de Qgis como un raster usamos la siguiente línea de código:
+ 
+Figura 8. Código de creación del mapa
+Con ello ya se finaliza el proceso y se agregará automáticamente en nuestro mapa
+
+# Manejo de desarrollo
+
+![Palabras Del Texto Alternativo]
+
